@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinger</title>
+    <script src="script.js" defer></script> <!-- Carga el archivo de script -->
+</head>
+<body>
+    <h1>Bienvenido al servidor de ping</h1>
+    <label for="dominio">Escriba su dominio aquí</label>
+    <form id="pingForm" action="/ping" method="POST">
+        <input type="text" name="url" placeholder="Ingresa la URL" required>
+        <button type="submit">Hacer ping</button>
+    </form>
+    <div id="result"></div> <!-- Div para mostrar el resultado -->
+</body>
+</html>
